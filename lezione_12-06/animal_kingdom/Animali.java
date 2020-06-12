@@ -1,6 +1,7 @@
 package animal_kingdom;
 
 public class Animali extends EssereVivente {
+	public enum sesso{MASCHIO, FEMMINA}
 	sesso s;
 
 	public sesso getS() {
@@ -16,8 +17,8 @@ public class Animali extends EssereVivente {
 		this.s = s.MASCHIO;
 	}
 	
-	public Animali(sesso s) {
-		super();
+	public Animali(int eta, sesso s) {
+		super(eta);
 		this.s = s;
 	}
 	
@@ -27,4 +28,3 @@ public class Animali extends EssereVivente {
 	}
 }
 
-enum sesso{MASCHIO, FEMMINA}

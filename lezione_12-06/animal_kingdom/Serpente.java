@@ -7,6 +7,10 @@ public class Serpente extends Rettili {
 	public boolean isVelenoso() {
 		return velenoso;
 	}
+	
+	public int getZampe() {
+		return zampe;
+	}
 
 	public void setVelenoso(boolean velenoso) {
 		this.velenoso = velenoso;

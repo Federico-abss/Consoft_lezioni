@@ -1,7 +1,7 @@
 package animal_kingdom;
 
 public class EssereVivente {
-	private int eta;
+	public int eta;
 
 	public void setEta(int eta) {
 		this.eta = eta;

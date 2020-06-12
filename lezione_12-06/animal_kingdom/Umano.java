@@ -15,5 +15,17 @@ public class Umano extends Animali {
 	}
 	public void setCognome(String cognome) {
 		this.cognome = cognome;
-	}	
+	}
+	
+	public Umano() {
+		super();
+		nome = "John";
+		cognome = "Doe";
+	}
+	
+	public Umano(int age, sesso s, String nome, String cognome) {
+		super(age, s);
+		this.nome = nome;
+		this.cognome = cognome;
+	}
 }
