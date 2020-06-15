@@ -67,7 +67,22 @@ public class MyCollection implements Collection<String> {
 
 	@Override
 	public boolean remove(Object o) {
-		// TODO Auto-generated method stub
+		String s=(String)o;
+		
+		if (this.contains(s)) {
+			String[] temp=new String[collection.length-1];
+			for (int i=0,j=0; i < temp.length; i++,j++) {
+				
+				if (collection[i].equals(s)) {
+					j++;
+				}
+				
+				temp[i] = collection[j];
+			}
+			collection = temp;
+			return true;
+		}		
+		
 		return false;
 	}
 
