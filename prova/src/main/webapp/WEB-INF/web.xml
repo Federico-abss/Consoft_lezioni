@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- webapp/WEB-INF/web.xml -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>La mia prima webapp</display-name>
+  <welcome-file-list>
+    <welcome-file>home.do</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>EmployeeController</display-name>
+    <servlet-name>EmployeeController</servlet-name>
+    <servlet-class>prova.controller.EmployeeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeController</servlet-name>
+    <url-pattern>/EmployeeController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProjectController</display-name>
+    <servlet-name>ProjectController</servlet-name>
+    <servlet-class>prova.controller.ProjectController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProjectController</servlet-name>
+    <url-pattern>/ProjectController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>homeController</display-name>
+    <servlet-name>homeController</servlet-name>
+    <servlet-class>prova.controller.homeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>homeController</servlet-name>
+    <url-pattern>/homeController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmployeeProjectController</display-name>
+    <servlet-name>EmployeeProjectController</servlet-name>
+    <servlet-class>prova.controller.EmployeeProjectController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeProjectController</servlet-name>
+    <url-pattern>/EmployeeProjectController</url-pattern>
+  </servlet-mapping>
+</web-app>
